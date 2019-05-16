@@ -5,5 +5,5 @@ services:
 before-install:
   - docker build -t arushkamboj/frontend -f Dockerfile.dev .
 
-  script:
+script:
     - docker run arushkamboj/frontend npm run test -- --coverage
